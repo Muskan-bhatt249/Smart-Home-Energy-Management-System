@@ -1,0 +1,17 @@
+com\smarthome\server\repository\OtpVerificationRepository.class
+com\smarthome\server\repository\PasswordResetTokenRepository.class
+com\smarthome\server\controllers\AnalyticsController.class
+com\smarthome\server\security\jwt\JwtUtils.class
+com\smarthome\server\models\User.class
+com\smarthome\server\payload\request\ResetPasswordRequest.class
+com\smarthome\server\payload\request\ForgotPasswordRequest.class
+com\smarthome\server\payload\request\LoginRequest.class
+com\smarthome\server\controllers\AuthController.class
+com\smarthome\server\models\OtpVerification.class
+com\smarthome\server\ServerApplication.class
+com\smarthome\server\services\EmailService.class
+com\smarthome\server\payload\request\SignupRequest.class
+com\smarthome\server\models\PasswordResetToken.class
+com\smarthome\server\payload\request\VerifyOtpRequest.class
+com\smarthome\server\repository\UserRepository.class
+com\smarthome\server\services\OtpService.class

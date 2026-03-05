@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-app: #0f172a;
+  /* Slate 950 */
+  --bg-card: #1e293b;
+  /* Slate 800 */
+  --bg-input: #020617;
+  /* Slate 950 (darker) */
+
+  --border-subtle: #334155;
+  /* Slate 700 */
+  --border-focus: #6366f1;
+  /* Indigo 500 */
+
+  --text-primary: #f8fafc;
+  /* Slate 50 */
+  --text-secondary: #94a3b8;
+  /* Slate 400 */
+  --text-tertiary: #64748b;
+  /* Slate 500 */
+
+  --primary: #6366f1;
+  /* Indigo 500 */
+  --primary-hover: #4f46e5;
+  /* Indigo 600 */
+}
+
+/* Reset & Base */
+body {
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Utilities */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
+  /* Tighter tracking for headings */
+}
+
+/* Component Classes */
+@layer components {
+  .saas-card {
+    @apply bg-slate-900 border border-slate-800 rounded-xl shadow-sm;
+  }
+
+  .saas-input {
+    @apply w-full px-3 py-2 bg-slate-950 border border-slate-800 rounded-lg text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all duration-200;
+  }
+
+  .saas-label {
+    @apply block text-xs font-semibold text-slate-400 mb-1.5 uppercase tracking-wide;
+  }
+
+  .saas-button-primary {
+    @apply px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-lg shadow-sm hover:shadow transition-all duration-200 focus:ring-2 focus:ring-indigo-500/40 focus:outline-none;
+  }
+
+  .saas-button-secondary {
+    @apply px-4 py-2 bg-transparent border border-slate-700 hover:bg-slate-800 text-slate-300 text-sm font-medium rounded-lg transition-all duration-200 focus:ring-2 focus:ring-slate-500/40 focus:outline-none;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
